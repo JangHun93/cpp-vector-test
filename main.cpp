@@ -42,7 +42,8 @@ void SetArrayRandomlyByInput(int *numList)
     {
         cout << newList[i] << ", ";
     }
-    cout << endl;
+
+    delete newList;
 }
 
 int main()
@@ -57,6 +58,8 @@ int main()
     }
 
     SetArrayRandomlyByInput(numList);
+
+    delete numList;
 
     return 0;
 }
